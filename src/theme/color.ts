@@ -1,20 +1,23 @@
 import { ColorPalette } from './types';
 
 export const lightColors: ColorPalette = {
+  // Semantic
   primary: '#4F46E5',
   secondary: '#10B981',
-
-  background: '#FFFFFF',
-  surface: '#F8F9FA',
-
-  textPrimary: '#111827',
-  textSecondary: '#6B7280',
-
   danger: '#EF4444',
   success: '#10B981',
 
-  border: '#E5E7EB',
+  // Background
+  background: '#FFFFFF',
+  surface: '#F8F9FA',
+
+  // Text
+  textPrimary: '#111827',
+  textSecondary: '#6B7280',
   inverseText: '#000',
+
+  // Border
+  border: '#E5E7EB',
 };
 
 export const darkColors: ColorPalette = {

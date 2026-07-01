@@ -27,7 +27,7 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
       theme: isDark ? darkTheme : lightTheme,
       isDark,
     };
-  }, [isDark]);
+  }, [isDark, toggleTheme]);
 
   return (
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>

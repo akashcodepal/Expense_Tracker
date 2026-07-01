@@ -18,14 +18,17 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 import RootNavigator from './src/navigation/RootNavigator';
+import ThemeProvider from './src/theme/ThemeProvider';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <NavigationContainer>
-      <RootNavigator />
-    </NavigationContainer>
+    <ThemeProvider>
+      <NavigationContainer>
+        <RootNavigator />
+      </NavigationContainer>
+    </ThemeProvider>
   );
   // return (
   //   <SafeAreaProvider>
